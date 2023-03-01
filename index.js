@@ -40,6 +40,6 @@ app.use("/quiz", quiz);
 
 app.use("/docs", dartDocs);
 
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3030, () => {
   console.log("Server is running on : http://127.0.0.1:3030");
 });
